@@ -1,0 +1,24 @@
+document.querySelector('.search-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const destination = event.target.querySelector('input[type="text"]').value;
+    const startDate = event.target.querySelectorAll('input[type="date"]')[0].value;
+    const endDate = event.target.querySelectorAll('input[type="date"]')[1].value;
+    const travelers = event.target.querySelector('input[type="number"]').value;
+
+    const resultsList = document.querySelector('.results-list');
+    resultsList.innerHTML = '';
+
+    for (let i = 1; i <= 5; i++) {
+        const result = document.createElement('div');
+        result.className = 'result-item';
+        result.innerHTML = `
+            <h3>${destination} - Hôtel ${i}</h3>
+            <p>Dates: ${startDate} - ${endDate}</p>
+            <p>Voyageurs: ${travelers}</p>
+            <p>Prix: ${(Math.random() * 200 + 50).toFixed(2)} € / nuit</p>
+            <button>Réserver maintenant</button>
+        `;
+        resultsList.appendChild(result);
+    }
+});

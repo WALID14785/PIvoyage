@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agence de voyage - Réservez vos séjours, hôtels et plus encore." />
+  <title>Agence de Voyage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Agence Voyage</div>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Destinations</a>
+        <a href="#">Réservations</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Explorez le monde avec nous</h1>
+      <p>Réservez vos séjours, hôtels et expériences en un seul clic.</p>
+      <form class="search-form">
+        <input type="text" placeholder="Entrez une destination..." required />
+        <input type="date" required />
+        <input type="date" required />
+        <input type="number" placeholder="Nombre de voyageurs" min="1" required />
+        <button type="submit">Rechercher</button>
+      </form>
+    </section>
+
+    <section class="destinations">
+      <h2>Destinations Populaires</h2>
+      <div class="destination-grid">
+        <div class="destination">Paris, France</div>
+        <div class="destination">New York, USA</div>
+        <div class="destination">Tokyo, Japon</div>
+        <div class="destination">Dubai, Émirats</div>
+        <div class="destination">Istanbul, Turquie</div>
+        <div class="destination">Rome, Italie</div>
+        <div class="destination">Barcelone, Espagne</div>
+        <div class="destination">Londres, Royaume-Uni</div>
+      </div>
+    </section>
+
+    <section class="results">
+      <h2>Résultats de Recherche</h2>
+      <div class="results-list">
+        <!-- Les résultats de réservation seront affichés ici -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Agence de Voyage. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

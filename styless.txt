@@ -1,0 +1,98 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Formulaire de réservation */
+#booking-form {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="date"],
+#booking-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Bouton de soumission */
+#booking-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#booking-form button:hover {
+  background-color: #219150;
+}
+
+/* Résultats de la recherche */
+#results {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#results .result-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#results .result-item h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+#results .result-item p {
+  margin: 8px 0;
+  color: #555;
+}
+
+#results .result-item button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #2980b9;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#results .result-item button:hover {
+  background-color: #1f6391;
+}
